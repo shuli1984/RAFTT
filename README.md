@@ -1,2 +1,2 @@
-# didactic-telegram
+# RAFTT
 Restful API Fast Test Toolkit
