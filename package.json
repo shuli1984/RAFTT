@@ -1,0 +1,33 @@
+{
+  "name": "raftt",
+  "version": "1.0.0",
+  "description": "Restful API Fast Test Toolkit",
+  "main": "raftt.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuli1984/RAFTT.git"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Fast",
+    "Test",
+    "Toolkit"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuli1984/RAFTT/issues"
+  },
+  "homepage": "https://github.com/shuli1984/RAFTT#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "json-server": "^0.16.3"
+  }
+}

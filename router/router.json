@@ -1,0 +1,6 @@
+{
+  "router": [
+    { "name": "demo1", "url": "demo1" },
+    { "name": "demo2", "url": "demo2" }
+  ]
+}
