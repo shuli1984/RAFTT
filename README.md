@@ -3,6 +3,7 @@ Restful API Fast Test Toolkit
 
 ## How to use it
 1. Config router
+   
     Edit router information look like router/router.json.
     name is api name.
    ```json
@@ -15,6 +16,7 @@ Restful API Fast Test Toolkit
     ```
     </code>
 2. Config response logical
+
     Config which response will be return by which case.
 
     Look like function/demo1_Fun.js. RAFTT will search response logical by api name.
@@ -39,6 +41,7 @@ Restful API Fast Test Toolkit
         };
     ```
 3. Config response data
+
     Just use json file for config response data. RAFTT will search response data from api name's folder.
 
     Look like response/demo1/demo_OK1.json.
