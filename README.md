@@ -1,6 +1,27 @@
 # RAFTT
 Restful API Fast Test Toolkit
 
+## How to install
+Download and install node.js.
+You can find install package from https://nodejs.org/en/download/.
+
+
+After installed node.js, execute this CMD for install require model.
+```shell
+npm install dotenv json-server
+```
+
+Execute this CMD for verify install.
+```shell
+node raftt.js 
+```
+
+You can see the boot information.
+```shell
+Restful API Fast Test Toolkit is running.
+You can visit it by http://127.0.0.1:8080
+```
+
 ## How to use it
 1. Config router
    
