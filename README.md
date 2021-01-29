@@ -4,8 +4,10 @@ Restful API Fast Test Toolkit
 ## How to use it
 1. Config router
    
-    Edit router information look like router/router.json.
-    name is api name.
+    Edit router information such as router/router.json.
+    "name" is api name.
+    
+    Example: 
    ```json
     {
         "router": [
@@ -14,16 +16,21 @@ Restful API Fast Test Toolkit
         ]
     }
     ```
-    </code>
+    You can access this api by http://127.0.0.1:8080/demo1. (You can config port with the .evn file). 
+    
+    RAFTT will search and loading logical and response data by api name.
+    
 2. Config response logical
 
     Config which response will be return by which case.
 
-    Look like function/demo1_Fun.js. RAFTT will search response logical by api name.
+    Such asfunction/demo1_Fun.js. RAFTT will search response logical by api name.
 
     The file name must use api name.(I use "_Fun" tag for easily know this is function)
 
     This example will return response data "demo_OK1" when request's demo's value is "demo1".
+
+    Example: 
     ```javascript
         module.exports = {
             exec: function (req, res, responseData) {
@@ -44,9 +51,11 @@ Restful API Fast Test Toolkit
 
     Just use json file for config response data. RAFTT will search response data from api name's folder.
 
-    Look like response/demo1/demo_OK1.json.
+    Such as response/demo1/demo_OK1.json.
 
     The folder name must same as the api name.
+
+    Example: 
    ```json
     {
         "result": "demo_OK1"
