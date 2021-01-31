@@ -1,6 +1,7 @@
 {
   "router": [
-    { "name": "demo1", "url": "demo1" },
-    { "name": "demo2", "url": "demo2" }
+    { "name": "demo1", "url": "demo1url", "type": "POST" },
+    { "name": "demo2", "url": "demo2url", "type": "GET" },
+    { "name": "demo3", "url": "demo3url", "type": "BOTH" }
   ]
 }

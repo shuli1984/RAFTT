@@ -17,14 +17,13 @@ main();
 function main() {
   server.use(jsonServer.bodyParser);
   server.use((req, res) => {
-    if (req.method === "POST") {
-      console.log("headers:");
-      console.log(req.headers);
-      try {
-        router.router(funcModule, responseData, req, res);
-      } catch (error) {
-        console.error(error);
-      }
+    console.log("headers:");
+    console.log(req.headers);
+
+    try {
+      router.router(funcModule, responseData, req, res);
+    } catch (error) {
+      console.error(error);
     }
   });
 
