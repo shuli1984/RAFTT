@@ -32,8 +32,9 @@ You can visit it by http://127.0.0.1:8080
    ```json
     {
         "router": [
-            { "name": "demo1", "url": "demo1" },
-            { "name": "demo2", "url": "demo2" }
+            { "name": "demo1", "url": "demo1url", "type": "POST" },
+            { "name": "demo2", "url": "demo2url", "type": "GET" },
+            { "name": "demo3", "url": "demo3url", "type": "BOTH" }
         ]
     }
     ```
@@ -68,6 +69,27 @@ You can visit it by http://127.0.0.1:8080
             },
         };
     ```
+
+    You can use "req.query" for get parameter when use GET method.
+
+    Example: 
+    ```javascript
+        module.exports = {
+            exec: function (req, res, responseData) {
+                switch (req.query.demo) {
+                case "demo1":
+                    res.jsonp(responseData.demo_OK1);
+                    break;
+                case "demo2":
+                    res.jsonp(responseData.demo_OK2);
+                    break;
+                default:
+                    res.jsonp(responseData.demo_NG);
+                }
+            },
+        };
+    ```
+
 3. Config response data
 
     Just use json file for config response data. RAFTT will search response data from api name's folder.
